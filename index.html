@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Istok+Web&display=swap" rel="stylesheet">
     <title>Portfolio Project</title>
     <link href="./styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e56ee3960.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -18,9 +19,9 @@
 
         <header>
                 <nav class="grid-nav">
-                    <a href="#" class="grid-nav-1">Home</a>
-                    <a href="#" class="grid-nav-2">Projects</a>
-                    <a href="#" class="grid-nav-3">Contact</a>
+                    <a href="#home" class="grid-nav-1">Home</a>
+                    <a href="#projects" class="grid-nav-2">Projects</a>
+                    <a href="./contact.html" class="grid-nav-3">Contact</a>
                 </nav>
         </header>
     
@@ -28,7 +29,7 @@
         <main>
             <div class="intro">
                 <img src="./Images/DESIGN.png" class="intro-image">
-                <div class="intro-box">
+                <div id="home" class="intro-box">
                     <h1>REBECCA ADAMS</h1>
                     <h2>Web Portfolio</h2>
                 </div>
@@ -36,7 +37,7 @@
 
         <!--Projects-->
 
-        <div class="project-section">
+        <div id = "projects" class="project-section">
 
                 <h2 class="project-header">Projects:</h2>
                 <div class="project-boxes">
@@ -65,8 +66,43 @@
 
         <div class="skills-section">
             <h2 class="skills-header">Skills:</h2>
+            <div class="skills-container">
+                <div class="icons">
+                    <i class="fa-brands fa-css3"></i>
+                    <h5>CSS</h5>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-html5"></i>
+                    <h5>HTML</h5> 
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-js"></i>
+                    <h5>JavaScript</h5>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-github"></i>
+                    <h5>github</h5> 
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-git"></i>
+                    <h5>git</h5>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-figma"></i>
+                    <h5>figma</h5>  
+                </div>
+            </div>
         </div>
         </main> 
+
+        <footer>
+            <div class="secondary-nav">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </footer>
+
         <script src="script.js"></script>
 </body>
 </html>
