@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Istok+Web&display=swap" rel="stylesheet">
     <link href="./contact.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e56ee3960.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <body>
@@ -20,9 +21,92 @@
         <nav class="grid-nav">
             <a href="./index.html" class="grid-nav-1">Home</a>
             <a href="./index.html" class="grid-nav-2">Projects</a>
-            <a href="#" class="grid-nav-3">Contact</a>
+            <a href="#contact" class="grid-nav-3">Contact</a>
         </nav>
-</header>
+    </header>
+        <main>
+            <div class="grid" id="contact">
+                <div class="header">
+                    <h1>Contact</h1>
+                </div>
+                <div class="grid-item email">
+                    <i class="fa-solid fa-envelope fa-3x"></i>
+                    <h2 class="grid-item-1">EMAIL</h2>
+                    <p class="grid-item-2">example@example.com</p>
+                </div>
+                <div class="grid-item phone">
+                    <i class="fa-solid fa-phone fa-3x"></i>
+                    <h2 class="grid-item-3">PHONE</h2>
+                    <p class="grid-item-4">(999)-999-9999</p>
+                </div>
+                <div class="grid-item insta">
+                    <i class="fa-brands fa-square-instagram fa-3x"></i>
+                    <h2 class="grid-item-5">INSTAGRAM</h2>
+                    <p class="grid-item-6">@exampleinsta</p>
+                </div>
+                <div class="grid-item form">
+                    <form action="./submission.html" method="POST">
+                        <h2>GET A QUOTE</h2>
+                        <br>
+                        <section class="user-contact">
+                            <span>Let's get to know each other.</span>
+                            <br>
+                            <div class="name-input">
+                                <label for="fullname">Name:</label>
+                                <input type="text" name="fullname" id="fullname" required>
+                            </div>
+                            <div class="email-input">
+                                <label for="user-email">Email:</label>
+                                <input type="text" name="user-email" id="user-email" required>
+                            </div>
+                        </section>
+                        <br>
+    
+                        <section class="services">
+                            <span>What services are you interested in?</span>
+                            <br>
+                            <input type="checkbox" name="service" id="web-design" value="Web Design">
+                            <label for="web-design">Web Design</label>
+                            <input type="checkbox" name="service" id="email-marketing" value="Email Marketing">
+                            <label for="email-marketing">Email Marketing</label>
+                            <input type="checkbox" name="service" id="branding" value="Branding">
+                            <label for="branding">Branding</label>
+                        </section>
+                        <br>
+    
+                        <section class="budget">
+                            <label for="budget-range">What is your monthly budget?</label>
+                            <br>
+                            <span>$500</span>
+                            <input name="budget-range" id="budget-range" type="range" min="0" max="9" step="1">
+                            <span>$5,000</span>
+                        </section> 
+                        <br>
+    
+                        <section class="free-text">
+                            <label for="message">Leave a message:</label>
+                            <br>
+                            <textarea id="message" name="message" minlength="20" maxlength="250" >Max 250 characters</textarea>
+                        </section>
+                        <br>
+    
+                        <section class="submit">
+                            <input type="submit" value="Submit">
+                        </section>
+    
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="secondary-nav">
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
 
 </body>
 </html>

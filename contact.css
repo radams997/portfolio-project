@@ -5,20 +5,23 @@
 }
 
 body {
-    background-image: url(./Images/DESIGN.png);
-    background-position: cover;
+    background-image: url(./Images/paper\ background.jpg);
+    background-size: cover;
     font-family: "Istok Web", Arial, Helvetica, sans-serif;
     font-size: 16px;
-    height: 100%;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
+main {
+    margin-top: 10%;
+}
 
 /* Header */
 
 header {
     background-color: black;
-    padding: 10px;
+    padding: 20px;
 }
 
 nav {
@@ -50,4 +53,146 @@ a:hover {
 
 .grid-nav-3 {
     grid-column: 11 / 12;
+}
+
+/* GRID */
+
+.grid {
+    background-image: url(./Images/DESIGN.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    ". . header header . ."
+    "email email email form form form"
+    "phone phone phone form form form"
+    "insta insta insta form form form";
+    margin: 4rem;
+    padding: 5rem 2rem 6rem 2rem;
+    text-align: center;
+    min-width: 310px;
+    border-radius: 20px;
+    border: solid 3px #f37272;
+}
+
+.header {
+    grid-area: header;
+    background-image: url(./Images/paper\ background.jpg);
+    background-size: cover;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    font-size: 1rem;
+    max-width: 600px;
+    min-width: 250px;
+    margin: 1rem 2rem 3rem 2rem;
+    padding: 1rem 0;
+    border: solid 3px #f37272;
+}
+
+h1 {
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem;
+    
+}
+
+
+.grid-item {
+    background-image: url(./Images/paper\ background.jpg);
+    background-size: cover;
+    background-color: rgb(245, 245, 245);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    min-width: 100px;
+    border: solid 3px #f37272;
+}
+.email {
+    grid-area: email;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.insta {
+    grid-area: insta;
+}
+
+.form {
+    grid-area: form;
+}
+
+@media only screen and (max-width: 630px) {
+   .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "email email email"
+    "phone phone phone"
+    "insta insta insta"
+    "form form form"
+    "form form form"
+    "form form form";
+   }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-areas: 
+     "header"
+     "email"
+     "phone"
+     "insta"
+     "form"
+     "form"
+     "form";
+     margin: 0.5rem;
+     min-width: 300px;
+    }
+
+    .grid-item {
+        min-width: 175px;
+    }
+
+    .header {
+        min-width: 175px;
+    }
+ }
+/*FOOTER*/
+
+footer {
+    background-color: black;
+    margin-top: 10%;
+}
+
+.secondary-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.secondary-nav a {
+    color: white;
+    letter-spacing: .1rem;
+    font-size: 0.75rem;
+    line-height: 1.75;
+}
+
+.secondary-nav a:hover {
+    color:#f37272;
 }
